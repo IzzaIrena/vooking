@@ -254,7 +254,7 @@ if ($IdPenyedia) {
                 </div>
                 <div id="langganan-form" class="langganan-container" style="display: none;">
                     <h3>Perpanjang Langganan</h3>
-                    <p>Upload bukti pembayaran untuk memperpanjang langganan selama <strong>1 tahun</strong>. Silakan lakukan pembayaran biaya aktivasi sebesar <strong>Rp100.000</strong> dan unggah bukti transfer.</p>
+                    <p>Upload bukti pembayaran untuk memperpanjang langganan selama <strong>1 tahun</strong>. Silakan lakukan pembayaran biaya aktivasi sebesar <strong>Rp100.000</strong>, ke nomor rekening BRI: <strong>6019-0221-6811-2222</strong> dan unggah bukti transfer.</p>
                     <form method="POST" enctype="multipart/form-data">
                         <label for="bukti">Bukti Pembayaran (jpg/png/jpeg):</label>
                         <input type="file" name="bukti" id="bukti" accept="image/*" required>
