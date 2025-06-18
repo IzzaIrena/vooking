@@ -1,0 +1,176 @@
+/* button.css */
+
+/* Tombol Umum */
+.btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* EDIT FASILITAS */
+/* Tombol Biru */
+.btn-blue {
+    background-color: #0275d8;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #025aa5;
+}
+
+/* Tombol Merah */
+.btn-red {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #c9302c;
+}
+
+/* Tombol Hijau */
+.btn-green {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #449d44;
+}
+
+/* Outline Merah */
+.btn-outline-red {
+    background: none;
+    border: 2px solid #d9534f;
+    color: #d9534f;
+}
+
+.btn-outline-red:hover {
+    background: #d9534f;
+    color: white;
+}
+
+/* Tombol Hapus Khusus */
+.btn-delete-facility {
+    background: rgba(217, 83, 79, 0.08);
+    color: #d9534f;
+    border: 2px solid #d9534f;
+    padding: 10px 18px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(217, 83, 79, 0.2);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.btn-delete-facility:hover {
+    background-color: #d9534f;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(217, 83, 79, 0.4);
+    transform: translateY(-2px);
+}
+
+/* PEMESANAN LANGSUNG */
+.btn-tambah,
+.btn-hapus {
+    margin-top: 5px;
+    color: white;  
+    height: 30px;         /* Tinggi tetap */
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Teks selalu di tengah */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Warna masing-masing */
+.btn-tambah {
+    background-color: #28a745;
+}
+.btn-tambah:hover {
+    background-color: #218838;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    margin-left: 3px;
+}
+.btn-hapus:hover {
+    background-color: #c82333;
+}
+
+.btn-catat {
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}
+.btn-catat:hover {
+    background-color: #0056b3;
+}
+
+/* VERIFIKASI PEMESANAN */
+.btn-accept,
+.btn-decline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    min-width:100px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-accept {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-accept:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-decline {
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-decline:hover {
+    background-color: #da190b;
+    transform: translateY(-2px);
+}
+
+/* Optional: icon size */
+.btn-accept i,
+.btn-decline i {
+    font-size: 16px;
+}
+

@@ -1,0 +1,308 @@
+/* Reset & dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0f4fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 850px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Login dan Register share full width */
+.login-panel,
+.register-panel {
+    display: flex;
+    flex: 1;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Hide panels berdasarkan mode */
+.container:not(.register-mode) .register-panel {
+    display: none;
+}
+
+.container.register-mode .login-panel {
+    display: none;
+}
+
+/* Panel kiri umum */
+.left-panel {
+    flex: 1;
+    background: #003087;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.left-panel .logo {
+    width: 150px;
+    max-width: 80%;
+}
+
+.left-panel h1 {
+    color: #95c0db;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.left-panel p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 220px;
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ----------------------------
+   Panel Kanan - Login Panel
+----------------------------- */
+.login-panel .right-panel {
+    flex: 1;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-panel h2 {
+    color: #003087;
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.login-panel .subtext {
+    color: #003087;
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 280px;
+    text-align: center;
+}
+
+.login-panel .form-group {
+    margin-bottom: 15px;
+    max-width: 320px;
+}
+
+.login-panel .form-group label {
+    font-weight: bold;
+    color: #003087;
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.login-panel .input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #003087;
+    padding: 6px 12px;
+    border-radius: 16px;
+    width: 100%;
+    height: 40px; /* Lebih kecil dari sebelumnya */
+    max-width: 320px;
+}
+
+.login-panel .input-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    flex: 1;
+    font-size: 14px;
+    padding: 4px 6px;
+    height: 100%;
+}
+
+.login-panel .input-wrapper i {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.register-panel .input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #003087;
+    padding: 6px 14px;
+    border-radius: 14px;
+    width: 100%;
+    height: 36px; /* lebih ramping */
+    max-width: 360px; /* lebih panjang dari login */
+}
+
+.register-panel .input-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    flex: 1;
+    font-size: 13px;
+    padding: 4px 5px;
+    height: 100%;
+}
+
+.register-panel .input-wrapper i {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.login-panel .login-btn {
+    margin-top: 20px;
+    width: 140px;
+    font-size: 16px;
+    padding: 10px 0;
+    background: #003087;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center;
+}
+
+.login-panel .login-btn:hover {
+    background: #002266;
+}
+
+/* ----------------------------
+   Panel Kanan - Register Panel
+----------------------------- */
+.register-panel .right-panel {
+    flex: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.register-panel h2,
+.register-panel .register-title {
+    color: #003087;
+    font-size: 24px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.register-panel .subtext {
+    color: #003087;
+    font-size: 13px;
+    margin-bottom: 12px;
+    max-width: 280px;
+    text-align: center;
+}
+
+.register-panel .form-group {
+    margin-bottom: 8px;
+}
+
+.register-panel .form-group label {
+    font-weight: bold;
+    color: #003087;
+    font-size: 13px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.register-panel .input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #003087;
+    padding: 5px 12px;
+    border-radius: 14px;
+}
+
+.register-panel .input-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    flex: 1;
+    font-size: 13px;
+    padding: 3px 5px;
+}
+
+.register-panel .input-wrapper i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.register-panel .login-btn {
+    margin-top: 10px;
+    width: auto;
+    font-size: 14px;
+    padding: 8px 20px;
+    background: #003087;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center;
+}
+
+.register-panel .login-btn:hover {
+    background: #002266;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    .left-panel {
+        border-radius: 0;
+        padding: 20px 10px;
+    }
+}
+
+

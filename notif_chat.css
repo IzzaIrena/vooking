@@ -1,0 +1,128 @@
+.chat-icon-wrapper {
+    position: relative;
+}
+
+.chat-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notif-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.notif-dropdown {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 999;
+    padding: 10px;
+}
+
+.notif-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+.notif-item:last-child {
+    border-bottom: none;
+}
+
+.notif-empty {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+/* NOTIFIKASI PENYEDIA */
+.chat-icon-wrapper {
+    position: relative;
+}
+
+.chat-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notif-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notif-icon-wrapper {
+    position: relative;
+}
+
+.notif-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.notif-header {
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.notif-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.notif-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+.notif-item.belum {
+    background-color: #e9f6ff;
+    font-weight: bold;
+}
+
+.notif-item.kosong {
+    text-align: center;
+    color: #888;
+}
+
+.notif-item .tanggal {
+    font-size: 0.75em;
+    color: #888;
+}
