@@ -1,0 +1,395 @@
+/* DASHBOARD */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #f0f4f8;
+}
+
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+
+.sidebar button:hover {
+    background: #dceeff;
+}
+
+.sidebar .active {
+    background: #cce5ff;
+    font-weight: bold;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* penting agar .content bisa scroll sendiri */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 30px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004080;
+}
+
+.header-icons i {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+.stat-box p {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #004080;
+    font-size: 14px;
+}
+
+.circle {
+    --size: 100px;
+    --thickness: 10px;
+    --value: 0;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background:
+        conic-gradient(#004080 calc(var(--value) * 1%), #e0e0e0 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: calc(var(--size) - var(--thickness)*2);
+    height: calc(var(--size) - var(--thickness)*2);
+    border-radius: 50%;
+    background: white;
+    z-index: 1;
+}
+
+.number {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004080;
+}
+
+.icon {
+    font-size: 18px;
+    color: #004080;
+    margin-top: 10px;
+    display: block;
+}
+
+/* VERIFIKASI AKUN */
+h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: middle;
+}
+th {
+    background-color: #004080;
+    color: white;
+    font-weight: 600;
+}
+tr:hover {
+    background-color: #f1f9ff;
+}
+.btn {
+    cursor: pointer;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.btn-approve {
+    background-color: #28a745;
+}
+.btn-approve:hover {
+    background-color: #218838;
+}
+.btn-reject {
+    background-color: #dc3545;
+}
+.btn-reject:hover {
+    background-color: #c82333;
+}
+.reject-form {
+    margin-top: 10px;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    resize: vertical;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+}
+.message {
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.bukti-img {
+    max-width: 120px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* PEMBAYARAN LANGGANAN */
+.content h2 {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: #004080;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    background-color: #dceaff;
+} */
+
+/* tr:hover {
+    background-color: #f9fbff;
+} */
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.default-user-icon {
+    font-size: 50px;
+    color: #ccc;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-red:hover {
+    background-color: #e63946;
+}
+
+/* LAPORAN */
+.bukti-foto {
+    width: 100px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.bukti-foto:hover {
+    transform: scale(1.05);
+}
+
+.status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.aksi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.aksi-link {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    transition: background 0.3s ease;
+}
+
+.aksi-link.ditinjau { background-color: #fff3cd; color: #856404; }
+.aksi-link.selesai  { background-color: #d4edda; color: #155724; }
+.aksi-link.dikirim  { background-color: #ffe9e9; color: #d60000; }
+
+/* MANAJEMEN FASILITAS */
+
+tr[style] {
+    border-left: 5px solid orange;
+}
+
+.aksi a {
+    margin-right: 10px;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aksi a:hover {
+    text-decoration: underline;
+}
+
+td img { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; }
+
+.btn-aksi {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 110px; /* Atur sesuai kebutuhan */
+    text-align: center;
+}
+
+
+.btn-tangguhkan {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-aktifkan {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.btn-aksi:hover {
+    opacity: 0.9;
+}
+
+.btn-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
