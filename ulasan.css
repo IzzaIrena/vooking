@@ -1,0 +1,119 @@
+.default-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 28px;
+    margin-right: 16px;
+}
+
+.vooking-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: white;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 32px;
+}
+
+.vooking-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.back-home-icon {
+    color: #003087;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 24px;
+}
+
+.sort-container form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-container select {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.ulasan-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ulasan-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.ulasan-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ulasan-foto {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.ulasan-content {
+    flex: 1;
+}
+
+.ulasan-content strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.ulasan-content .rating-stars {
+    margin: 4px 0;
+}
+
+.rating-stars i {
+    color: #f39c12;
+    margin-right: 2px;
+}
+
+.ulasan-content small {
+    color: #888;
+    font-size: 12px;
+}
+
+.ulasan-content p {
+    margin-top: 8px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
