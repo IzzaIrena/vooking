@@ -181,7 +181,7 @@ while ($row = $resNotif->fetch_assoc()) {
                 <div id="provider-form" class="provider-form-container" style="display: none; margin-top: 20px;">
                     <form action="aktifkan_penyedia.php" method="POST" enctype="multipart/form-data">
                         <h3>Aktivasi Sebagai Penyedia</h3>
-                        <p>Untuk menjadi penyedia fasilitas, silakan lakukan pembayaran biaya aktivasi sebesar <strong>Rp200.000</strong> dan unggah bukti transfer.</p>
+                        <p>Untuk menjadi penyedia fasilitas, silakan lakukan pembayaran biaya aktivasi sebesar <strong>Rp200.000</strong>, ke nomor rekening BRI: <strong>6019-0221-6811-2222</strong> dan unggah bukti transfer.</p>
 
                         <label for="bukti">Upload Bukti Pembayaran:</label>
                         <input type="file" name="bukti" id="bukti" accept="image/*" required>
