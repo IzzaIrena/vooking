@@ -1,0 +1,74 @@
+.booking-table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.booking-table th,
+.booking-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.booking-table th {
+    background-color: #004080;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.booking-table tr:hover {
+    background-color: #f1f9f1;
+}
+
+.bukti-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bukti-img:hover {
+    transform: scale(1.05);
+}
+
+.action-form {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.action-form button {
+    margin: 2px 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 6px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.empty-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+    font-family: Arial, sans-serif;
+}
