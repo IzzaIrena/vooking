@@ -194,6 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <td><?= $tanggalMulai ? $tanggalMulai->format('d-m-Y') : '-' ?></td>
                     <td><?= $tanggalSelesai ? $tanggalSelesai->format('d-m-Y') : '-' ?></td>
                     <td>
+                        <?php if ($row['StatusLangganan'] !== 'non_aktif'): ?>
                             <!-- Ikon peringatan -->
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="peringatan_id_user" value="<?= $row['IdUser'] ?>">
