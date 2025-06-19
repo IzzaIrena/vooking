@@ -194,15 +194,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <td><?= $tanggalMulai ? $tanggalMulai->format('d-m-Y') : '-' ?></td>
                     <td><?= $tanggalSelesai ? $tanggalSelesai->format('d-m-Y') : '-' ?></td>
                     <td>
-                        <?php if ($row['StatusLangganan'] !== 'non_aktif'): ?>
-                            <form method="POST" style="display:inline;">
-                                <input type="hidden" name="user_id" value="<?= $row['IdUser'] ?>">
-                                <input type="hidden" name="id_penyedia" value="<?= $row['IdPenyedia'] ?>">
-                                <button type="submit" name="jadikan_pelanggan" class="btn-red" onclick="return confirm('Yakin ingin mengubah menjadi pelanggan?')">
-                                    <i class="fa fa-user-minus"></i> Jadikan Pelanggan
-                                </button>
-                            </form>
-
                             <!-- Ikon peringatan -->
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="peringatan_id_user" value="<?= $row['IdUser'] ?>">
